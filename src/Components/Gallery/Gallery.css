@@ -106,8 +106,13 @@ h2{
 
 
 body {
-    background: #000;
-    margin: 18px;
+    background: white;
+
+}
+
+h2{
+    text-Align: center;
+    color: #d4aa18;
 }
 
 .lg-react-element {

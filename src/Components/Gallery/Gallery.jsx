@@ -89,6 +89,7 @@
 
 import React from 'react';
 import LightGallery from 'lightgallery/react';
+import './Gallery.css';
 
 // Import styles
 import 'lightgallery/css/lightgallery.css';
@@ -167,6 +168,7 @@ const Gallery = () => {
 
     return (
         <div className="App">
+            <h2>GALLERY</h2>
             <LightGallery
                 onInit={onInit}
                 speed={500}
