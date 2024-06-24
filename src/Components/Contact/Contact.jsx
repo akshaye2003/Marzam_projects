@@ -1,8 +1,10 @@
-import React from 'react'
-import './Contact.css'
+import React from 'react';
+import './Contact.css';
 import EmailSharpIcon from '@mui/icons-material/EmailSharp';
 import LocalPhoneSharpIcon from '@mui/icons-material/LocalPhoneSharp';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import msgIcon from '../../assets/msg-icon.png';
+import whiteArrowIcon from '../../assets/white-arrow.png';
 
 const Contact = () => {
 
@@ -36,12 +38,12 @@ const Contact = () => {
 
         <div className="contact">
             <div className="contact-col">
-                <h3>Send us a Message <img src="src\assets\msg-icon.png" alt="" className='msg-icon'/></h3>
+                <h3>Send us a Message <img src={msgIcon} alt="" className='msg-icon'/></h3>
                 <p>Feel free to reach out through contact from </p>
                 <ul>
                     <li><EmailSharpIcon  className='mail-icon'/>marzamprojects@gmail.com</li>
                     <li>  <LocalPhoneSharpIcon  className='phone-icon' /> +968 93227928</li>
-                    {/* <li><img src="src/assets/location-icon.png" alt="" className='location-icon' />77 Massachusetts Ave, Cambridge <br /> MA 021239, Unites States</li> */}
+                    {/* <li><img src={locationIcon} alt="" className='location-icon' />77 Massachusetts Ave, Cambridge <br /> MA 021239, Unites States</li> */}
                     <li>  <InstagramIcon  className='phone-icon' />Marzam_projects</li>
                 </ul>
             </div>
@@ -53,7 +55,7 @@ const Contact = () => {
                     <input type="tel" name='phone' placeholder='Enter your phone number' required/>
                     <label htmlFor="">Write your message here </label>
                     <textarea name="message" rows="6" placeholder='Enter your message' required></textarea>
-                    <button type='submit' className='btn dark-btn'>Submit Now <img src="src\assets\white-arrow.png" alt=""  className=''/></button>
+                    <button type='submit' className='btn dark-btn'>Submit Now <img src={whiteArrowIcon} alt=""  className=''/></button>
                 </form>
 
                 <span>
@@ -63,7 +65,7 @@ const Contact = () => {
             </div>
         </div>
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import { useNavigate } from 'react-router-dom';
+import whiteArrow from '../../assets/white-arrow.png'; // Import the white-arrow image
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -10,9 +11,9 @@ const Hero = () => {
         <h1>Marzam Projects</h1>
         <p> Transforming Spaces with Precision, Creativity, and Innovation.
         Delivering Excellence in Design, Craftsmanship, and Functionality.</p>
-        <button onClick={()=>navigate('/gallery')} className='btn'> 
+        <button onClick={() => navigate('/gallery')} className='btn'> 
           Explore More 
-          <img src="src\assets\white-arrow.png" alt="Arrow Icon" className='dark-arrow'/>
+          <img src={whiteArrow} alt="Arrow Icon" className='dark-arrow' />
         </button>
       </div>
     </div>
