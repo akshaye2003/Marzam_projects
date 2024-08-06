@@ -11,5 +11,5 @@ export default defineConfig({
 })
 
 
-fs.writeFile('src/CNAME', "marzamprojects.com", function(err) {});
-ghpages.publish('src', function(err) {});
+fs.writeFile('dist/CNAME', "marzamprojects.com", function(err) {});
+ghpages.publish('dist', function(err) {});
